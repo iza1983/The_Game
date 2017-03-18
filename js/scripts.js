@@ -66,10 +66,6 @@ function newGame() {
   }
 }
 
-function playerPick(playerPick) {
-  console.log(playerPick);
-}
-
 function getComputerPick() {
   var possiblePicks = ['rock', 'paper', 'scissors'];
   return possiblePicks[Math.floor(Math.random()*3)];
@@ -92,7 +88,7 @@ function playerPick(playerPick) {
 function checkRoundWinner(playerPick, computerPick) {
   playerResultElem.innerHTML = computerResultElem.innerHTML = '';
   
-  var winnerIs = 'player';
+    var winnerIs = 'player';
   
     if (playerPick == computerPick) {
         winnerIs = 'remis';
@@ -102,7 +98,6 @@ function checkRoundWinner(playerPick, computerPick) {
         (computerPick == 'rock' && playerPick == 'scissors') ||
         (computerPick == 'scissors' && playerPick == 'paper') ||
         (computerPick == 'paper' && playerPick == 'rock')) {
-
         winnerIs = 'computer';
     }
 
