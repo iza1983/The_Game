@@ -111,16 +111,13 @@ function checkRoundWinner(playerPick, computerPick) {
         computerPointsElem.innerHTML = computer.score;
     }
 
-    if (player.score == '10') {
-       alert(player.name + ' Wygrałeś! ' + ' 10 punktów!')
-       gameState = 'ended'
-       setGameElements()
-    } else if (computer.score == '10') {
-       alert('Wygrał komputer! 10 punktów! Spróbuj jeszcze raz!')
-       gameState = 'ended'
-       setGameElements()
+    if (player.score === 10 || computer.score === 10) {
+      alert(
+        player.score > computer.score ? player.name + ' Wygrałeś! ' + ' 10 punktów!' : 'Wygrał komputer! 10 punktów! Spróbuj jeszcze raz!'
+      );
+      gameState = 'ended';
+      setGameElements();
     }
-}
 
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
