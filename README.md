@@ -1,1 +1,1 @@
-# kodilla-8.12 - The Game
+# The Game - paper, scissor, rock (papier, nożyczki, kamień)
