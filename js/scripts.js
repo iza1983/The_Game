@@ -118,6 +118,7 @@ function checkRoundWinner(playerPick, computerPick) {
       gameState = 'ended';
       setGameElements();
     }
+}
 
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
